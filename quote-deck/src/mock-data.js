@@ -14,12 +14,12 @@ let mock = [
   {
     id: 3,
     author: "Trenton Lee Stewart",
-    Quote: "\"Remember the white knight.\" Though it seemed so long ago, he well remembered their conversation about the chess problem. The white knight had made a move, changed his mind, and started over. \'And do you believe this was a good move?\" Mr. Benedict had asked. \"No, sir,\" Reynie had answered. \"Why, then, do you think he made it?\" And Reynie had replied, \"Perhaps because he doubted himself.\"",
+    Quote: "\"Remember the white knight.\" Though it seemed so long ago, he well remembered their conversation about the chess problem. The white knight had made a move, changed his mind, and started over. \"And do you believe this was a good move?\" Mr. Benedict had asked. \"No, sir,\" Reynie had answered. \"Why, then, do you think he made it?\" And Reynie had replied, \"Perhaps because he doubted himself.\"",
     Topic: "Encouragement"
   },
   {
     id: 4,
-    author: "Ray Bradbuyr",
+    author: "Ray Bradbury",
     Quote: "I hate all politics. I don't like either political party. One should not belong to them - one should be an individual, standing in the middle. Anyone that belongs to a party stops thinking.",
     Topic: "Advice"
   },
@@ -41,4 +41,6 @@ let mock = [
     Quote: "True love is not so much a matter of romance as it is a matter of anxious concern for the well-being of one's companion.",
     Topic: "Relationships"
   }
-]
+];
+
+export default mock;

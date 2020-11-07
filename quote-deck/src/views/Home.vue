@@ -1,18 +1,36 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div class="home">
+  <h4><i>Quote of the day:</i></h4>
+  <QuoteList :quotes="chooseRandQuote" />
+</div>
 </template>
 
 <script>
+//<HelloWorld msg="Welcome to Your Vue.js App" />
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import QuoteList from '../components/QuoteList.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    QuoteList
+  },
+  computed: {
+    chooseRandQuote() {
+      var randInt = Math.floor(Math.random() * this.$root.$data.quotes.length) + 1;
+      console.log("randInt: " + randInt);
+      return this.$root.$data.quotes.filter(quote => quote.id === randInt)
+      //console.log(this.$root.$data.quotes[2]);
+      //return this.$root.$data.quotes;
+    }
   }
 }
 </script>
+
+<style scoped>
+h4 {
+  padding-top: 2%;
+  text-align: center;
+  text-color: #5C5654;
+}
+</style>
