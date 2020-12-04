@@ -115,6 +115,7 @@ export default {
 <style scoped>
 input {
   width: 300px;
+  margin-bottom: 15px;
 }
 
 textarea {
@@ -146,11 +147,13 @@ h2 {
 .suggestion {
   border: 1px solid #ccc;
   padding: 5px;
+  margin: 10px;
 }
 
 .suggestions {
   border: 2px solid #5C5654;
   max-width: 300px;
+  margin: 10px;
 }
 
 .btn.btn-primary {
